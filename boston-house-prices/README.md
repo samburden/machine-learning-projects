@@ -1,6 +1,6 @@
 ## Boston Housing Prices Project
 
-This project explores data about Boston area homes and attempts to predict prices based on various features of the home. This dataset comes from [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Housing). A subset of the data has been used for this project and can be found in the [housing.csv](./housing.csv) file.
+This project explores data about Boston area homes and attempts to predict prices based on various features of the home. A subset of the data has been used for this project and can be found in the [housing.csv](./housing.csv) file.
 
 This project is using Python 2.7 and needs the following libraries:
 
