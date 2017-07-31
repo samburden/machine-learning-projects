@@ -11813,7 +11813,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import libraries necessary for this project</span>
@@ -11931,7 +11931,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Total number of records</span>
@@ -12025,7 +12025,7 @@ Percentage of individuals making more than $50,000: 24.78%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Split the data into features and target label</span>
@@ -12362,7 +12362,7 @@ SXaP8WtVTZPMq2qS+zmdJTl+fBcAvJv7gb9TY4xvrwEAAPgRnjABAABtAgIAAGgTEAAAQJuAAAAA
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Log-transform the skewed features</span>
@@ -12699,7 +12699,7 @@ lt95AAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import sklearn.preprocessing.StandardScaler</span>
@@ -12912,7 +12912,7 @@ lt95AAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: One-hot encode the &#39;features_log_minmax_transform&#39; data using pandas.get_dummies()</span>
@@ -12965,7 +12965,7 @@ lt95AAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import train_test_split</span>
@@ -13053,7 +13053,7 @@ It is a ratio of true positives(words classified as spam, and which are actually
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
@@ -13066,11 +13066,10 @@ It is a ratio of true positives(words classified as spam, and which are actually
 <span class="sd">Recall = [True Positives/(True Positives + False Negatives)]</span>
 <span class="sd">Precision = [True Positives/(True Positives + False Positives)]</span>
 <span class="sd">&#39;&#39;&#39;</span>
-<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
 <span class="n">TP</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">income</span><span class="p">))</span>
 <span class="n">FP</span> <span class="o">=</span> <span class="n">income</span><span class="o">.</span><span class="n">count</span><span class="p">()</span> <span class="o">-</span> <span class="n">TP</span>
 <span class="c1"># TODO: Calculate accuracy, precision and recall</span>
-<span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">income</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">income</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
+<span class="n">accuracy</span> <span class="o">=</span> <span class="n">n_greater_50k</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="n">n_records</span><span class="p">)</span>
 <span class="n">recall</span> <span class="o">=</span> <span class="n">TP</span> <span class="o">/</span> <span class="p">(</span><span class="n">TP</span> <span class="o">+</span> <span class="mi">0</span><span class="p">)</span>
 <span class="n">precision</span> <span class="o">=</span> <span class="n">TP</span> <span class="o">/</span> <span class="p">(</span><span class="n">TP</span> <span class="o">+</span> <span class="n">FP</span><span class="p">)</span>
 
@@ -14169,7 +14168,10 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> A gradient boosting algorithm typically combines multiple decision trees to form one combined model. It makes the decision tree by determining the best split of the data at each level in the tree. Best split can be thought as choosing the feature in the data that best segregates what the output label will be. This is repeated as trees are combined together to create one big tree. The boosting part of the algorithm affects how the model learns at each iteration. For every iteration, a subset of the data is chosen to train to produce the rules in the decision tree. Specifically it focuses on the "hardest" samples in the data. We can think of the "hardest" samples as those samples in the data where the model is struggling to predict the correct label. So the distribution of the sample data at each iteration we be more weighted towards the samples the model is classifying incorrectly. By focusing on these samples, the model is able to improve the overall accuracy with each iteration of learning and ultimately build a model that performs better than a simple decision tree. Prediction is simple as we can simply navigate down the tree from the root and compare the test example with the decision points at each node. Once we get to a leaf in the tree we have our prediction.</p>
+<p><strong>Answer: </strong> 
+To help explain gradient boosting I will use the below visulization:</p>
+<p><img src="boosting.png" alt="boosting"></p>
+<p>Gradient boosting is an iterative process, in other words it keeps repeating the same process over and over to eventually arrive at an optimal solution. The above image shows what the first 3 steps in this process might look like. We can think of the pluses and minuses above as points that have been graphed on a simple x-y plane. In our case we could think of the x-axis as represent the age of a person and the y-axis representing the capital-gain of a person. So after graphing this data we arrive with the points above in the image. For our example we can think of the pluses meaning that person earns more than \$50K while a minus mean they earn at most \$50K. So to start as you can see in the first image on the left a line is drawn to try to separate the points which creates a blue shaded area and a red shaded area. Any points that are in the blue we predict will make more than \$50K and the opposite for the red area. As you can see we correctly predicted a majority of the points. We did incorrectly predict the three pluses at the top though so let's see if we can fix that. The main aspect of boosting is that at each step it mainly focuses on the prediction that it got wrong at previous steps, so we will focus more on 3 blue pluses we got wrong. To symbolize this we made those pluses larger in the middle image and we now draw a new line to separate the points. We can now see we got all the pluses in the blue region but we have now incorrectly predicted 3 minuses. So in the 3rd image we will focus on those 3 minuses signified by the larger minus signs and draw another line which correctly predicts these 3 minuses. You will notice this still incorrectly predicts some points. We keep repeating this process until our errors get smaller and smaller. At the end we will take an average of all the steps to produce a boundary between the blue and red area. Predicting new data is as simple as graphing the points based on the person's age and capital-gain. If the point falls in the blue area we predict they make more than \$50K otherwise if in the red area they make at most \$50K.</p>
 
 </div>
 </div>
