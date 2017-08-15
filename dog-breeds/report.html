@@ -14676,7 +14676,12 @@ Epoch 20/20
 <h2 id="Step-7:-Test-Your-Algorithm">Step 7: Test Your Algorithm<a class="anchor-link" href="#Step-7:-Test-Your-Algorithm">&#182;</a></h2><p>In this section, you will take your new algorithm for a spin!  What kind of dog does the algorithm think that <strong>you</strong> look like?  If you have a dog, does it predict your dog's breed accurately?  If you have a cat, does it mistakenly think that your cat is a dog?</p>
 <h3 id="(IMPLEMENTATION)-Test-Your-Algorithm-on-Sample-Images!">(IMPLEMENTATION) Test Your Algorithm on Sample Images!<a class="anchor-link" href="#(IMPLEMENTATION)-Test-Your-Algorithm-on-Sample-Images!">&#182;</a></h3><p>Test your algorithm at least six images on your computer.  Feel free to use any images you like.  Use at least two human and two dog images.</p>
 <p><strong>Question 6:</strong> Is the output better than you expected :) ?  Or worse :( ?  Provide at least three possible points of improvement for your algorithm.</p>
-<p><strong>Answer:</strong>  It did well at predicting humans vs dogs and if the image was neither. The first dog's breed is misclassified but it correctly predicted the golden retriever. The type of dog the humans look like actually produced some funny results as I expect the first human pic decided poodle based on their hair. It also did well at not predicting the cat was a dog.</p>
+<p><strong>Answer:</strong>  It did well at predicting humans vs dogs and if the image was neither. The first dog's breed is misclassified but it correctly predicted the golden retriever. The first breed was a big difference as a clumber spaniel is a large dog breed and the picture is obviously a very small dog. The type of dog the humans look like actually produced some funny results as I expect the first human pic decided poodle based on their hair. It also did well at not predicting the cat was a dog. Below are 3 possible improvements:</p>
+<ol>
+<li>Train with more images of dogs. Including new dog breeds.</li>
+<li>Augment the images by rotating or shifting them.</li>
+<li>I could also deepen the convolution layers so that more individual features could be extracted.</li>
+</ol>
 
 </div>
 </div>
